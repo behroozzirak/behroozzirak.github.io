@@ -1,0 +1,37 @@
+.teaser{
+    background-color: lightblue;
+    padding: 3rem;
+}
+
+.sub-heading{
+    padding-left: 1rem;
+    border-left: solid 6px transparent;
+    border-left-color: lightskyblue;
+}
+
+.row.bio{
+    margin-top: 3rem;
+}
+
+.row.skills{
+    margin-top: 3rem;
+}
+
+.row.skills-icons{
+    line-height: 30px;
+}
+
+.row.skills-icons div svg{
+    height: 30px;
+}
+
+/* .row.skills-description{
+    /* sdff */
+/* } */
+
+.skill-heading{
+    margin-top: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    /* font-family: 'Montserrat', sans-serif; */
+}

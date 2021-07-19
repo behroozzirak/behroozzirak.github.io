@@ -17,9 +17,9 @@
     margin-top: 3rem;
 }
 
-/* .row.skills-icons{
-    line-height: 30px;
-} */
+.item{
+    margin-bottom: 32px;
+}
 
 .item-icon svg{
     height: 30px;

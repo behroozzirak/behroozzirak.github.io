@@ -21,6 +21,10 @@
     margin-bottom: 32px;
 }
 
+.item-icon{
+    height: 45px;
+}
+
 .item-icon svg{
     height: 30px;
 }

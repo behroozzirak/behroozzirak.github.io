@@ -17,19 +17,15 @@
     margin-top: 3rem;
 }
 
-.row.skills-icons{
+/* .row.skills-icons{
     line-height: 30px;
-}
+} */
 
-.row.skills-icons div svg{
+.item-icon svg{
     height: 30px;
 }
 
-/* .row.skills-description{
-    /* sdff */
-/* } */
-
-.skill-heading{
+.item-title{
     margin-top: 0px;
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;

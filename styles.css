@@ -9,8 +9,12 @@
     border-left-color: lightskyblue;
 }
 
+.overview-section{
+    padding: 48px 48px 48px 48px;
+}
+
 .row.bio{
-    margin-top: 3rem;
+    margin: 0px 0px 0px 0px
 }
 
 .row.skills{

@@ -1,10 +1,11 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bez Zirak</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
@@ -22,16 +23,16 @@
                             <p>
                                 I'm a software engineer specialising in frontend development for complex scalable web applications. Want to know how I may help your project? Please feel free to get in touch and check out my project portfolio and online resume.
                             </p>
-                            <button class="btn btn-primary btn-lg">Contact Me</button>
-                            <button class="btn btn-default btn-lg">View Portfolio</button>
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+                            <a class="btn btn-light btn-lg" href="#bio" role="button">View Portfolio</a>
                         </div>
                         <div class="col-sm-5 col-md-3 col-lg-3">
-                            <img class="img-responsive img-circle" src="assets/images/profile-image.jfif" alt=""/>
+                            <img class="img-fluid rounded-circle" src="assets/images/profile-image.jfif" alt=""/>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="overview-section p-3 p-lg-5">
+            <section class="overview-section p-3 p-lg-5" id="bio">
                 <div class="container">
                     <div class="row bio">
                         <h2 class="sub-heading">What I do</h2>
@@ -97,7 +98,50 @@
             </section>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form 
+                        id="fs-frm" 
+                        name="simple-contact-form" 
+                        accept-charset="utf-8" 
+                        action="https://formspree.io/f/xrgraodn" 
+                        method="POST"
+                    >
+                        <fieldset id="fs-frm-inputs">
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                <input type="text" name="name" class="form-control" id="recipient-name" placeholder="Please enter your name" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-address" class="col-form-label">Email Address:</label>
+                                <input type="email" name="_replyto" class="form-control" id="email-address" placeholder="email@domain.com" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea name="message" class="form-control" id="message-text" placeholder="Please type your message"></textarea>
+                            </div>
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        </fieldset>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-primary" value="Send message">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-/* html { scroll-behavior: smooth;} */
+html { scroll-behavior: smooth;}
 
 .teaser{
     background-color: lightblue;
@@ -9,10 +9,6 @@
     padding-left: 1rem;
     border-left: solid 6px transparent;
     border-left-color: lightskyblue;
-}
-
-.overview-section{
-    padding: 48px 48px 48px 48px;
 }
 
 .row.bio{
@@ -40,4 +36,43 @@
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     /* font-family: 'Montserrat', sans-serif; */
+}
+
+.project-item-container {
+    margin-bottom: 48px;
+}
+
+.card-img-holder {
+    max-height: 250px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.card-body {
+    line-height: 24px;
+    overflow-wrap: break-word;
+}
+
+.card-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-img {
+    overflow-wrap:break-word;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+br {
+    background-color: red;
+}
+
+.project-item-container a {
+    text-decoration: none;
 }

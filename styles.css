@@ -69,10 +69,16 @@ html { scroll-behavior: smooth;}
     margin-bottom: 10px;
 }
 
-br {
-    background-color: red;
-}
-
 .project-item-container a {
     text-decoration: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .teaser-buttons {
+        text-align: center;
+    }
+
+    .teaser-buttons > * {
+        margin-bottom: 20px;
+    }
 }

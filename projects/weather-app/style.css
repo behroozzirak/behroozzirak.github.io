@@ -87,6 +87,7 @@ button:disabled, button[disabled] {
 }
 
 .location-input {
+    border-radius:0px;
     height: 100%;
     padding: 1vh;
     font-family: sans-serif;
@@ -130,4 +131,44 @@ button:disabled, button[disabled] {
 
 .degree-section h2 {
     font-size: 40px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    input[type='text'] { font-size: 2rem; }
+    
+    .location-form {
+        font-size: 2rem;
+        width: 30vh;
+    }
+    .location-input::placeholder {
+        font-size: 2rem;
+    }
+
+    .invalid input::placeholder {
+        font-size: 2rem;
+    }
+
+    .current-location-button {
+        font-size: 2.5rem;
+    }
+
+    .location-timezone {
+        font-size: 5rem;
+    }
+
+    .icon {
+        height: 7vh
+    }
+
+    .degree-section h2 {
+        font-size: 4rem;
+    }
+
+    .degree-section span {
+        font-size: 4rem;
+    }
+
+    .temperature-description {
+        font-size: 2.5rem;
+    }
 }
